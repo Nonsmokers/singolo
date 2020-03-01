@@ -1,0 +1,143 @@
+.portfolio{
+    width: 1020px;
+    min-height: 870px;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+}
+.portfolio-wrapper{
+    width: 940px;
+    padding-top: 60px;
+}
+.portfolio-title {    
+    font-family: "Lato Black", sans-serif;
+    font-size: 30px;
+    color: #666d89;
+    letter-spacing: 0.2px;
+}
+.portfolio-description{
+    font-size: 18px;
+    margin-top: 22px;
+    word-spacing: -2px;
+    letter-spacing: -0.02px;
+    color: #767e9e;
+}
+.portfolio-container{
+    display: flex;
+    justify-content:center ;
+}
+.portfolio-image-block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 640px;
+    padding: 19px 0 0 0;
+}
+.portfolio-grid{
+    cursor: pointer;
+}
+.portfolio-grid:hover{
+    -webkit-transform: scale(1.07);
+}
+.portfolio-grid:nth-child(n + 13){
+    display: none;
+}
+.portfolio-buttons-list{
+    display: flex;
+    justify-content: space-between;
+    width: 288px;
+    padding: 15px 0 0 1px;
+}
+.portfolio-button {
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    color: #767e9e;
+    padding: 0 6px;
+    cursor: pointer;
+}
+.portfolio-button:hover{
+    border-color: #c5c5c5;
+    color: #c5c5c5;
+}
+.about_us{
+    width: 1020px;
+    height: 728px;
+    background-color: #f2f2f2;
+}
+.about_us-container{   
+    display: flex;     
+    justify-content: center;
+}
+.about_us-wrapper{
+    width: 940px;
+    padding-top: 59px;
+}
+.about_us-title{
+    font-family: "Lato Black", sans-serif;
+    font-size: 30px;
+    color: #767e9e;
+    word-spacing: -1px;    
+}
+.about_us-description{
+    margin-top: 18px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+    word-spacing: -2.25px;
+    color: #767e9e;
+}
+.about_us-main-block{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;    
+}
+.about_us-item{
+    max-width: 300px;
+}
+.about_us-item-photo{
+    max-height: 300px;
+    overflow: hidden;
+}
+.about_us-item:last-child {
+    margin-left: 2px;
+}
+.about_us-item-name{
+    font-size: 18px;
+    color: #666d89;
+    padding-top: 15px;
+    max-height: 40px;
+    overflow: hidden;
+}
+.about_us-item-description{
+    color: #767e9e;
+    text-align: justify;
+}
+.about_us-item-description p{
+    font-size: 12px;
+    padding-top: 8px;
+    line-height: 21px;
+    text-align: justify;
+}
+.about_us-item-contact-social{
+    display: flex;
+    height: 32px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #666d89;   
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.about_us-item-contact-social:hover{ 
+    -webkit-transform: scale(1.2);
+    opacity: 0.6;
+}
+.about_us-item-contacts{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    padding-left: 1px;
+}
