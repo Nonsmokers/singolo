@@ -1,0 +1,174 @@
+.quote {
+    height: 654px;
+    padding: 53px 36px 0 34px;
+    background-color: #f06c64;
+    border: solid 6px #ea676b;
+}
+.qoute-title {
+    font-family: "Lato Black", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #f0d8d9;
+    letter-spacing: -0.25px;
+}
+.quote-description {
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #f0d8d9;   
+    letter-spacing: -0.34px;
+    text-align: justify;
+    padding-top: 18px;
+}
+.quote-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 42px;
+}
+
+
+.form {
+    width: 66.66%;
+    padding: 2px 6px 0 0;
+}
+.input {
+    display: block;
+    padding: 4px 15px 11px 15px;
+    margin-bottom: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+    color: #f48c8f;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    outline: none;
+}
+.input::placeholder {
+    color: #f48c8f;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 12px;
+}
+.input-block {
+    resize: none;
+    height: 202px;
+    padding: 10px 0 0 14px;
+}
+.submit {
+    justify-self: end ;
+    display: block;
+    width:20%;
+    height: 10%;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Lato Regular', sans-serif;
+    border: solid 1px #d6564f;
+    background-color: #d6564f;
+    color: #f48c8f;
+    cursor: pointer;
+    transition: color .2s linear, background-color .2s linear;
+}
+.submit:hover{
+    color: #d6564f;
+    background-color: #f0d8d9;
+    opacity: 0.6; 
+}
+
+
+.quote-contact-info {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 14px;
+}
+.quote-contact-title {
+    height: 30px;
+    font-family: "Lato Black", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #f0d8d9;    
+    letter-spacing: 0.1px;
+}
+.quote-contact-description {
+    height: 85px;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    letter-spacing: -0.1px;
+    text-align: justify;
+}
+.quote-contact-list{
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0 0;
+}
+.quote-contact-item{
+    height: 20px;
+    display: flex;    
+}
+.quote-contact-item a{
+    align-items: center;
+    padding-left: 9px;
+}
+.quote-contact-item:first-child a{
+    padding-top:1px
+}
+.quote-contact-item:last-child{
+    padding-top: 1px;
+}
+.quote-contact-item:last-child a{
+    padding-bottom: 1px;
+    padding-left: 5px;
+    letter-spacing: 0.01px;
+}
+.quote-contact-link {
+    text-decoration: none;
+    font-family: 'Lato regular', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #f0d8d9;
+    letter-spacing: -0.2px;
+}
+.quote-contact-link:hover {
+    text-decoration: underline;
+}
+
+
+.footer {
+    padding: 22px;
+    background-color: #2d303a;
+}
+.footer-wrapper {    
+    display: flex;
+    justify-content: space-between;
+    width: 966px;
+}
+.footer-copyright{
+    padding:6px 0 0 20px;
+    width: 10%;
+}
+.footer-item-contacts{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
+.footer-item-contact-social{
+    display: flex;
+    height: 32px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #666d89;   
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: color .2s linear, background-color .2s linear;
+}
+.footer-item-contact-social:hover{   
+    opacity: 0.6;    
+    background-color: #f0d8d9;
+}
