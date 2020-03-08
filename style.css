@@ -292,11 +292,12 @@ li {
     align-items: center;
     border: 1px solid #666d89;   
     border-radius: 50%;
-    margin-right: 8px;
+    margin-right: 8px;    
+    transition: color .2s linear, background-color .2s linear; 
 }
-.about_us-item-contact-social:hover{ 
-    -webkit-transform: scale(1.2);
-    opacity: 0.6;
+.about_us-item-contact-social:hover{  
+    background-color: #fefefe;
+    opacity: 0.3;
 }
 .about_us-item-contacts{
     display: flex;
