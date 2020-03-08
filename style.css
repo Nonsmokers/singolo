@@ -50,7 +50,11 @@ li {
 .menu-link{
     position: relative;
 }
-.menu-link:first-child a{
+.menu-link a{
+    cursor: pointer;    
+    transition: color .2s linear, background-color .2s linear;
+}
+.menu-link a:hover{
     color: #f06c64;
 }
 :not(:last-child)::before {
@@ -115,12 +119,13 @@ li {
     letter-spacing: 0.2px;
 }
 .services-our{
-    height: 44%;
+    height: 216px;
     padding: 59px 0 0 1%;
 }
 .services-info{
     display: flex; 
     flex-flow: column wrap;
+    width: 959px;
     height: 245px;   
     color: #666d89;
 }
@@ -133,10 +138,11 @@ li {
 .services-logo{
     display: flex;
     align-items: baseline;
-    padding-top: 2px;
+    padding-top: 3px;
 }
 .services-item{
     padding-left: 6%;
+    width: 238px;
 }
 .services-item h3{
     font-family: 'Lato Black', sans-serif;
@@ -145,11 +151,11 @@ li {
     color: #666d89;
 }
 .services-item p{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
     line-height: 22px;
-    padding-top: 3%;
-    word-spacing: 4px;
+    padding-top: 8px;
+    text-align: justify;
 }
 .portfolio{
     width: 1020px;
@@ -159,7 +165,7 @@ li {
 }
 .portfolio-wrapper{
     width: 940px;
-    padding-top: 60px;
+    padding-top: 59px;
 }
 .portfolio-title {    
     font-family: "Lato Black", sans-serif;
@@ -183,7 +189,7 @@ li {
     justify-content: space-between;
     flex-wrap: wrap;
     height: 640px;
-    padding: 18px 0 1px 0;
+    padding: 19px 0 0;
 }
 .portfolio-grid{
     cursor: pointer;
@@ -257,6 +263,9 @@ li {
 }
 .about_us-item:last-child {
     margin-left: 2px;
+}
+.about_us-item:last-child .about_us-item-name{
+    word-spacing: 4px;
 }
 .about_us-item-name{
     font-size: 18px;
