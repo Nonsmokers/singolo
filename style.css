@@ -273,6 +273,7 @@ li {
     padding-top: 15px;
     max-height: 40px;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .about_us-item-description{
     color: #767e9e;
