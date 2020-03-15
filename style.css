@@ -94,6 +94,7 @@ li {
 }
 .slider{
     height: 600px;
+    width: 100%;
     max-width: 1020px;
     background-color: #f06c64;
     border-bottom: solid 6px #ea676b;    
@@ -104,25 +105,57 @@ li {
     justify-content: space-around;
     max-width: 1020px;
     align-items: center;
-    padding: 0px 12px 2px 14px
+    padding: 0px 12px 2px 14px;
+    position: relative;
+}
+.slider-item{
+    display: flex;
 }
 .phone-ver{
-    padding: 0 19px 0 0;
+    padding: 0px 73px 0 0px;
 }
 .phone-hor{
-    padding: 0 1px 1px 0
+    padding: 121px 0 0px 0px;
 }
-.slider-prew {
-    cursor: pointer;
-    position: absolute;
-    top: 250;
+.slider-prew{
+    left: 4.2%;
 }
 .slider-next{
+    right: 3.9%;
+}
+.slider-prew, .slider-next{
     cursor: pointer;
     position: absolute;
-    top: 250;
+    width: auto;
 }
-.services{
+.slider-prew:hover, .slider-next:hover {
+    opacity: .4;
+}
+.fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+    .services{
     display: flex;
     height: 500px; 
     max-width: 1020px;
