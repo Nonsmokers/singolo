@@ -7,7 +7,7 @@ const about = document.getElementById('about');
 const contact = document.getElementById('contact');
 
 
-//activate menu links
+//ACTIVATE MENU TAGS
 MENU.forEach(el => {  
   el.addEventListener('click', () => {
     MENU.forEach(element => {
@@ -18,7 +18,7 @@ MENU.forEach(el => {
 });
 
 
-//scroll to anchors
+//SCROLLS TO ANCHORS
 for (let anchor of anchors) {
   anchor.addEventListener('click', el=>{
     el.preventDefault()      
@@ -27,13 +27,14 @@ for (let anchor of anchors) {
   })
 }
 
-//scroll calculate + menu list active
+
+//SCROLL CALCULATE + MENU LIST ACTIVE
 window.onscroll = function showHeader() {
   
   let servicesH = services.offsetTop;
   let portfolioH = portfolio.offsetTop;
   
-    if(window.pageYOffset > 60) {
+    if(window.pageYOffset > 60) {                                           
       header.classList.add('header-short');
     }else{
       header.classList.remove('header-short');
@@ -66,8 +67,9 @@ window.onscroll = function showHeader() {
       }
 }
 
-/////////////////////*SLIDER*//////////////////
-let slideIndex = 1;
+
+//SLIDER
+let slideIndex = 1;                                                           //functions changes slideindex
 showSlides(slideIndex);
 function plusSlide() {
     showSlides(slideIndex += 1);
@@ -79,7 +81,7 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 };
 
-function showSlides(n) {
+function showSlides(n) {                                                       //carousel
     let i;    
     let slides = document.getElementsByClassName("slider-item");
     if (n > slides.length) {
@@ -94,53 +96,53 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "flex";
 };
 
-
-//Screen phone off
-function openbox(n){
+function openbox(n){                                                          //screen iphone
   display = document.getElementById(n).style.display;
-  display=='none' ? document.getElementById(n).style.display='block' :
+  display == 'none' ? document.getElementById(n).style.display ='block' :
     document.getElementById(n).style.display='none';
 };
 
 
-/////////////////////*PORTFOLIO*//////////////////
+
+//PORTFOLIO
 const portfolioList = document.querySelectorAll('.portfolio-button');
 const portfolioItems = document.querySelectorAll('.portfolio-image');
+const portfolioAllImages = document.querySelector('.portfolio-image-block');
 
-//portfolio menu list activate
-portfolioList.forEach(el => {
+
+portfolioList.forEach(el => {                                                 //menu active tags+changes images
   el.addEventListener('click', () => {
     portfolioList.forEach(element => {
-      element.classList.remove('portfolio-button-active');
-
+      element.classList.remove('portfolio-button-active'); 
     });
-    el.classList.add('portfolio-button-active');   
+    el.classList.add('portfolio-button-active');
+    for(let i = portfolioAllImages.children.length; i >= 0; i--){
+      portfolioAllImages.appendChild(portfolioAllImages.children[Math.random() * i | 0]);
+    }
   });
 });
 
-//portfolio active image
-portfolioItems.forEach(el => {
+
+portfolioItems.forEach(el => {                                                //add bordering images
   el.addEventListener('click', () => {
     portfolioItems.forEach(element => {
       element.classList.remove('portfolio-image-active'); 
     });
     el.classList.add('portfolio-image-active');
-    portfolioItems.forEach(element => {
-            element.classList.remove('portfolio__item-active');
-        });
   });
 });
 
-//modal
+
+//MODAL
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const subject = document.getElementById('subject');
 const blog = document.getElementById('blog');
 const theme = document.getElementById('theme');
 const descr = document.getElementById('descr');
+const submitBtn = document.getElementById('submit');
 
 
-const submitBtn = document.getElementById('submit');      
 submitBtn.addEventListener('click', e => {
     e.preventDefault();
     if (name.value !== '' && email.value !== ''){
@@ -184,4 +186,3 @@ overlay.addEventListener('click', e =>{
         descr.textContent = 'Без описания';
     }
 });
-
