@@ -200,37 +200,36 @@ li {
 }
 .services-title{
     font-family: 'Lato Black';
+    margin-bottom: 2%;
 }
 .services-container{
     display: flex;
-    width: 960px;
+    max-width: 960px;
     flex-direction: column;
     font-size: 20px;
-    color: #666d89;
+    color: #666d89;    
+    padding: 60px 0 0 1%;
 }
 .services-container p {
     font-size: 1.1rem;
-    padding-top: 19px;
     line-height: 1.9pc;
     word-spacing: -0.5px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.2px;    
 }
 .services-our{
-    height: 216px;
-    padding: 59px 0 0 1%;
+    height: 36%;
 }
 .services-info{
     display: flex; 
     flex-flow: column wrap;
-    width: 959px;
+    width: 100%;
     height: 245px;   
     color: #666d89;
 }
 .services-blocks{
     display: flex;
-    width: 33%;    
-    height: 50%;    
-    padding-left: 1%;
+    width: 33.3%;    
+    height: 50%;
 }
 .services-logo{
     display: flex;
@@ -632,4 +631,81 @@ li {
     font-weight: 400;
 
     word-break: break-all;
+}
+
+@media (max-width:778px){
+    .header-menu{
+    width: 60%;
+    }
+    /*slider*/
+    .slider {
+    display: flex;
+    height: 452px;
+    justify-content: center;
+    align-items: center;
+    }
+    .phone-ver{
+        padding: 0px 55px 3px 85px;
+    }
+    .phone-ver img{
+        width: 181px;
+        height: 363px;
+    }
+    .phone-hor{
+        padding: 92px 36px 0px 0px;
+    }
+    .phone-hor img {
+        width: 363px;
+        height: 181px;
+    }
+    .slider-phone-ver{
+        display: none;
+    }
+    .slider-phone-hor{
+        display: none;
+    }
+
+    .slider-item{
+        width: 773px;
+    }
+    /*services*/
+    .services{
+        height: 674px;
+    }
+    .services-container{
+        max-width: 688px;
+        padding: 39px 0 0 0;
+    }
+    .services-info{
+        height: 435px;
+    }
+    .services-blocks{
+        height: 33%;
+        width: 45%;
+    }
+    /*portfolio*/
+    .portfolio-wrapper {
+        width: 688px;    
+    }
+    .portfolio-image-block{
+        height: 868px;
+    }
+    .portfolio-image{
+        max-width: 215px;
+        max-height: 185px;
+    }
+    /*about_us*/
+    .about_us-wrapper {
+        width: 688px;
+    }
+    .about_us-item-photo img{
+        width: 220px;
+    }
+    .about_us-item {
+        width: 220px;
+    }
+    /*quote*/
+    .quote {
+        height: 690px;
+    }
 }
