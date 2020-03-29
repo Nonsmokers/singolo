@@ -105,12 +105,11 @@ li {
     justify-content: space-around;
     max-width: 1020px;
     align-items: center;
-    padding: 0px 12px 2px 14px;
     position: relative;
 }
 .slider-item{
     display: flex;
-    padding: 8px 2px 0 0;
+    margin-top: 6px;
 }
 .phone-ver{
     padding: 0px 73px 0 0px;
@@ -170,7 +169,7 @@ li {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1s;
     animation-name: fade;
-    animation-duration: .5s;
+    animation-duration: .5
 }
 @-webkit-keyframes fade {
     from {
@@ -182,13 +181,13 @@ li {
 }
 @keyframes fade {
     from{
-    opacity: 0.5;
-    top: -70px;
-}
+        opacity: 0.5;
+    }
     to {
-    opacity: 1;
-    top: 0;
-}}
+        opacity: 1;
+    }
+}
+
 .services{
     display: flex;
     height: 500px; 
@@ -200,37 +199,38 @@ li {
 }
 .services-title{
     font-family: 'Lato Black';
+    margin-bottom: 2%;
 }
 .services-container{
     display: flex;
-    width: 960px;
+    max-width: 960px;
     flex-direction: column;
     font-size: 20px;
-    color: #666d89;
+    color: #666d89;    
+    padding: 60px 0 0 1%;
 }
 .services-container p {
     font-size: 1.1rem;
-    padding-top: 19px;
     line-height: 1.9pc;
     word-spacing: -0.5px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.2px;    
 }
 .services-our{
-    height: 216px;
-    padding: 59px 0 0 1%;
+    margin-bottom: 4%;
 }
 .services-info{
     display: flex; 
     flex-flow: column wrap;
-    width: 959px;
+    width: 100%;
     height: 245px;   
     color: #666d89;
+    justify-content: space-around;
+    align-items: center;
 }
 .services-blocks{
     display: flex;
-    width: 33%;    
-    height: 50%;    
-    padding-left: 1%;
+    width: 33.3%;    
+    height: 50%;
 }
 .services-logo{
     display: flex;
@@ -480,16 +480,16 @@ li {
     border-radius: 5px;
     font-size: 20px;
     font-family: 'Lato Regular', sans-serif;
-    border: solid 1px #d6564f;
-    background-color: #d6564f;
-    color: #f48c8f;
+    border: solid 1px #fbc65f;    
+    background-color: #fbc65f;    
+    color: rgb(71, 71, 71);
     cursor: pointer;
     transition: color .2s linear, background-color .2s linear;
 }
 .submit:hover{
-    color: #d6564f;
-    background-color: #f0d8d9;
-    opacity: 0.6; 
+    color: #fafafa;
+    background-color:  #fcca66c7;
+    box-shadow:  0 0 10px rgba(0,0,0,0.5);
 }
 
 
@@ -632,4 +632,217 @@ li {
     font-weight: 400;
 
     word-break: break-all;
+}
+
+@media screen and (max-width: 1019px) {
+    .header-menu{
+        width: 60%;
+    }
+    /*slider*/
+    .slider {
+        display: flex;
+        height: 452px;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider-container{
+        height: 446px;
+        width: 100%;
+    }
+    .phone-ver {
+        padding: 0%;
+        margin: 0 6% 0 12%;
+        display: flex;
+        align-items: center;    
+    }
+    .phone-ver img{
+        width: 100%;
+    }
+    .phone-hor {
+
+        padding: 0%;
+        margin: 0 10% 0 0%;
+        display: flex;
+        align-items: center;    
+    }
+    .phone-hor img {
+        width: 100%;
+    }
+    .slider-phone-ver{
+        display: none;
+    }
+    .slider-phone-hor{
+        display: none;
+    }
+    .slider-item{
+        height: 100%;
+        margin: 0%;
+    }
+    #SlidePhoneBlue{    
+        width: 100%;
+    }
+    /*services*/
+    .services{
+        height: 674px;
+    }
+    .services-container{
+        max-width: 688px;
+        padding: 39px 0 0 0;
+    }
+    .services-info{
+        height: 435px;
+    }
+    .services-blocks{
+        height: 33%;
+        width: 45%;
+    }
+    /*portfolio*/
+    .portfolio{
+        height: 1080px;
+    }
+    .portfolio-wrapper {
+        width: 688px;    
+    }
+    .portfolio-image-block {
+        margin-top: 2.8%;
+        height: 833px;
+    }
+    .portfolio-image{
+        max-width: 215px;
+        max-height: 185px;
+    }
+    /*about_us*/
+    .about_us-wrapper {
+        width: 688px;
+    }
+    .about_us-item-photo img{
+        width: 220px;
+    }
+    .about_us-item {
+        width: 220px;
+    }
+    /*quote*/
+    .quote {
+        height: 690px;
+    }
+    .quote-contact-list{
+        padding: 70px 0 0 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header {
+        height: 71px;
+        border: 0;
+        justify-content: center;
+    }
+    .header-logo {
+        width: auto;    
+    }
+    .logo{
+        padding: 0;
+    }   
+    .header-menu{
+        display: none;
+        width: 0;
+    }
+    .slider{
+        height: 220px;
+    }
+    .slider-container{
+        height: 220px;
+    }
+    .slider-item{
+        width: 100%;
+        justify-content: center;
+    }
+    .phone-ver img{
+        max-height: 200px;
+    }
+    .phone-hor img{
+        max-height: 100px;
+    }
+    .services{
+        height: 1035px;
+    }
+    .services-container{
+        padding: 40px 40px 40px 75px;
+        justify-content: space-between;
+    }
+    .services-info{
+        height: 780px;
+       
+    }
+    .services-blocks {
+        height: 15%;
+        min-width: 310px;
+    }
+    .portfolio{
+       height: auto;
+    }
+    .portfolio-wrapper{
+        padding: 60px 30px 0 30px;
+    }
+    .portfolio-image-block {
+        height: 590px;
+        max-width: 314px;        
+        justify-content: space-between;        
+        margin: auto;        
+        min-width: 320px;
+    }
+    .portfolio-image {
+        max-width: 150px;
+    }
+    .portfolio-grid:nth-child(n + 9){
+        display: none;
+    }
+    .about_us{
+        height: auto;
+    }
+    .about_us-wrapper{
+        padding: 30px 40px 100px 40px;
+    }
+    .about_us-main-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_us-item{
+        width: 100%;
+        max-width: 300px;
+    }
+    .about_us-item-photo img{
+        width: 100%;
+    }
+    .quote{
+        height: auto;
+        padding: 45px 25px 35px 25px;
+    }
+    .quote-wrapper {
+        flex-direction: column;
+    }
+    .form{
+        width: 100%;
+    }
+    .quote-contact-info {
+        width: 100%;
+    }
+    .quote-contact-info {
+        padding: 5% 0 0 0;    
+    }
+    .submit{
+        width: 100%;
+        height: 50px;
+    }
+    .quote-contact-list {
+        padding: 5% 0 0 0;    
+    }
+    .footer-copyright{
+        display: none;
+    }
+    .footer-wrapper{
+        justify-content: center;
+    }
+    .modal {
+        max-width: 355px;
+    }
 }
