@@ -1,3 +1,4 @@
 # singolo
-Hello=)
-Site is published at https://nonsmokers.github.io/singolo/
+Site is published here:
+https://nonsmokers.github.io/singolo-nativeJS/
+----
